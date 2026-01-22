@@ -1,3 +1,69 @@
-body{
-    background-color: green;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.tabs{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    background-color: wheat;
+    border: 5px solid rgb(226, 156, 26);
+    border-radius: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: wheat;
+}
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.webName{
+    font-family: 'Poppins','Montserrat',sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+    color: rgb(57, 57, 57);
+    letter-spacing: -2px;
+}
+.logoPhoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.topLeft{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
