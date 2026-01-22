@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/rudrakshupadhyay/Restaurant-Page/issues"
   },
-  "homepage": "https://github.com/rudrakshupadhyay/Restaurant-Page#readme"
+  "homepage": "https://github.com/rudrakshupadhyay/Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1"
+  }
 }
