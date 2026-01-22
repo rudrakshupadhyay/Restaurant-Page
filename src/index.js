@@ -1,3 +1,4 @@
+import loadHome from "./home";
 import cupLogo from "./cuplogo.svg";
 import "./styles.css";
 
@@ -8,3 +9,11 @@ Image.src = cupLogo;
 Image.classList.add("logoPhoto");
 logo.appendChild(Image);
 console.log("hello bro");
+let currTab = "none";
+const home = document.getElementById("home");
+home.addEventListener("click", () => {
+    if(currTab === "home") return;
+    loadHome();
+    currTab = "home";
+});
+   
