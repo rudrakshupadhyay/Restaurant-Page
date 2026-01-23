@@ -8,6 +8,8 @@ export default function loadMenu(){
     tagLine.textContent = "Menu";
     tagLine.classList.add("tagLine");
     //menuGroup1
+    // NOTE: innerHTML used for speed.
+    // In future projects, prefer createElement + data-driven rendering
     const menuGroup1 = document.createElement("div");
     menuGroup1.classList.add("menuGroup");
     menuGroup1.innerHTML = `
