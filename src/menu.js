@@ -1,5 +1,6 @@
 export default function loadMenu(){
     const content = document.getElementById("content");
+    content.innerHTML = "";
     const box = document.createElement("div");
     box.classList.add("box");
     //menu

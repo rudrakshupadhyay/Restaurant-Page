@@ -46,8 +46,20 @@ select {
     background-color: rgb(246, 198, 110);
     border: 5px solid rgb(226, 156, 26);
     border-radius: 10px;
+    color: rgb(57, 57, 57);
+    font-weight: 900;
 }
-
+.btn:hover{
+  background-color: rgb(226, 156, 26);
+}
+.btn:active{
+  transform: scale(0.8);
+}
+.currActive{
+    background-color: rgb(200, 135, 65);
+    color: aliceblue;
+    font-weight: 900;
+}
 .top{
     display: flex;
     justify-content: space-between;

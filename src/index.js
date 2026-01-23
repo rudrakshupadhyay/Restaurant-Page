@@ -6,21 +6,36 @@ import "./styles.css";
 
 (() => { 
     const logo = document.querySelector(".logo");
-    console.log(logo);
     const Image = document.createElement("img");
     Image.src = cupLogo;
     Image.classList.add("logoPhoto");
     logo.appendChild(Image)})();
 
-console.log("hello bro");
+
 const home = document.getElementById("home");
 const menu = document.getElementById("menu");
 const contact = document.getElementById("contact");
-let currTab = "none";
+
 const bnt = [home,menu,contact];
-home.addEventListener("click", () => {
-    if(currTab === "home") return;
+
+function setActive(currbnt){
+    bnt.forEach(b =>{
+        b.classList.remove("currActive");
+    });
+    currbnt.classList.add("currActive");
+}
+loadHome();
+setActive(home);
+home.addEventListener("click",() => {
+    loadHome();
+    setActive(home);
+});
+menu.addEventListener("click",() => {
+    loadMenu();
+    setActive(menu);
+});
+contact.addEventListener("click",() => {
     loadContect();
-    currTab = "home";
+    setActive(contact);
 });
    

@@ -1,5 +1,6 @@
 export default function loadHome(){
     const content = document.getElementById("content");
+    content.innerHTML = "";
     const box = document.createElement("div");
     box.classList.add("box");
     //taglines
