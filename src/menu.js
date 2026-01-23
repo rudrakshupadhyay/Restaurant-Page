@@ -1,56 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <header class="top">
-            <div class="topLeft">
-                <div class="logo"></div>
-                <div class="webName">The-Hungry-Owl</div>
-            </div>
-            <nav>
-                <ul class="tabs">
-                    <li><button class="btn" id="home">Home</button></li>
-                    <li><button class="btn" id="menu">Menu</button></li>
-                    <li><button class="btn" id="contact">Contact</button></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="content">
-            <!-- <div class="box">
-                <div class="tagLine">Where every bite tells a story</div>
-                <div class="testimonial">
-                    <div class="lines">
-                        The Hungry Owl serves some of the best porridge I’ve ever had! The cozy atmosphere and friendly service make
-                        you feel like you’re tucked away in the middle of the woods—eating happily, just like an owl. It’s exactly the
-                        kind of place that keeps calling me back again and again.
-                    </div>
-                    <div class="by">The-Hungry-Owl</div>
-                </div>
-                <div class="timing">
-                    <div class="timeTop">Hours</div>
-                    <ul class="days">
-                        <li class="day">Sunday: 8am – 8pm</li>
-                        <li class="day">Monday: 6am – 6pm</li>
-                        <li class="day">Tuesday: 6am – 6pm</li>
-                        <li class="day">Wednesday: 6am – 6pm</li>
-                        <li class="day">Thursday: 6am – 10pm</li>
-                        <li class="day">Friday: 6am – 10pm</li>
-                        <li class="day">Saturday: 8am – 10pm</li>
-                    </ul>
-                </div>
-                <div class="location">
-                    <div class="locaTop">Location</div>
-                    <div class="addres">123 forest Drive, Delhi, India</div>
-                </div> -->
-                <!-- menu -->
-                <!-- <div class="box">
-                    <div class="tagLine">Menu</div>
-                    <div class="menuGroup">
+export default function loadMenu(){
+    const content = document.getElementById("content");
+    const box = document.createElement("div");
+    box.classList.add("box");
+    //menu
+    const tagLine = document.createElement("div");
+    tagLine.textContent = "Menu";
+    tagLine.classList.add("tagLine");
+    //menuGroup1
+    const menuGroup1 = document.createElement("div");
+    menuGroup1.classList.add("menuGroup");
+    menuGroup1.innerHTML = `
                         <div class="tagLine menuSubTop">Beverages</div>
                         <div class="item">
                             <div class="itemTop">Honey Tea</div>
@@ -62,8 +21,11 @@
                             <div class="discr">A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.</div>
                             <div class="itemTop">$3</div>
                         </div>
-                    </div>
-                    <div class="menuGroup">
+    `;
+    //menuGroup2
+    const menuGroup2 = document.createElement("div");
+    menuGroup2.classList.add("menuGroup");
+    menuGroup2.innerHTML = `
                         <div class="tagLine menuSubTop">Sides</div>
                         <div class="item">
                             <div class="itemTop">Toast and Jam</div>
@@ -75,8 +37,11 @@
                             <div class="discr">A small bowl of fresh fruit, whatever we find at the market for the day.</div>
                             <div class="itemTop">$3</div>
                         </div>
-                    </div>
-                    <div class="menuGroup">
+    `;
+    //menuGroup3
+    const menuGroup3 = document.createElement("div");
+    menuGroup3.classList.add("menuGroup");
+    menuGroup3.innerHTML = `
                         <div class="tagLine menuSubTop">Main Dishes</div>
                         <div class="item">
                             <div class="itemTop">Pancakes</div>
@@ -118,10 +83,7 @@
                             <div class="discr">Made by Baby Bear himself, this porridge is guarenteed to be just right, or your money back.</div>
                             <div class="itemTop">$5</div>
                         </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+    `;
+    box.append(tagLine,menuGroup1,menuGroup2,menuGroup3);
+    content.append(box);
+}

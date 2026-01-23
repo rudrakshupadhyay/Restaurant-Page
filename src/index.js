@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 import cupLogo from "./cuplogo.svg";
 import "./styles.css";
 
@@ -13,7 +14,7 @@ let currTab = "none";
 const home = document.getElementById("home");
 home.addEventListener("click", () => {
     if(currTab === "home") return;
-    loadHome();
+    loadMenu();
     currTab = "home";
 });
    

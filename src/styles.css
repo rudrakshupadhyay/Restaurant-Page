@@ -143,10 +143,41 @@ select {
     padding: 0 30px 30px 30px;
 }
 .day{
-  padding-right: 10px;
-  text-align: center;
+    padding-right: 10px;
+    text-align: center;
 }
 .addres{
-  text-align: center;
+    text-align: center;
+}
+/* menu */
+.menuGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.menuSubTop{
+    width: 25%;
+}
+.item{
+    border: 20px solid rgb(189, 102, 9);
+    border-radius: 30px;
+    width: 50%;
+}
+.itemTop {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: xx-large;
+    background-color: rgb(226, 156, 26);
+    color: rgb(44, 44, 44);
+    padding: 30px;
+}
+.discr{
+    text-align: center;
+    background-color: rgb(226, 156, 26);
+    color: rgb(44, 44, 44);
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    padding: 0 30px;
 }
 
