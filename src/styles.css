@@ -180,4 +180,19 @@ select {
     font-family: 'Poppins', 'Montserrat', sans-serif;
     padding: 0 30px;
 }
+/* contect us */
+.contItemTop{
+    font-family: 'Luckiest Guy', cursive;
+    background-color: rgb(226, 156, 26);
+    color: rgb(44, 44, 44);
+    padding: 30px 30px 10px 30px;
+    font-size: larger;
+}
+.contCheif{
+    background-color: rgb(226, 156, 26);
+    color: rgb(44, 44, 44);
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    padding: 0px 30px 30px 30px;
+    font-weight: 700;
+}
 
